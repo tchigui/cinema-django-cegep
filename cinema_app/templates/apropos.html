@@ -1,0 +1,31 @@
+{% extends 'maitre.html' %}
+
+{% block titre %}Cinéma – A Propos{% endblock %}
+{% block titrepage %}A Propos{% endblock %}
+
+{% block apropos %}
+<div class="row g-4">
+  <div class="col-12 col-md-6">
+    <h3 class="mb-3">Description de l’environnement</h3>
+    <div class="card p-3">
+      <ul class="mb-0">
+        <li><strong>Python :</strong> 3.14.2</li>
+        <li><strong>Django :</strong> 6.0.1</li>
+        <li><strong>IDE :</strong> VS Code (ou PyCharm)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <h3 class="mb-3">Information du concepteur</h3>
+    <div class="card p-3">
+      <p class="mb-1"><strong>Nom :</strong> Patrick Tchigui</p>
+      <p class="mb-1"><strong>No étudiant :</strong> ________</p>
+      <p class="mb-1"><strong>Cours :</strong> Projet d’intégration Web</p>
+      <p class="mb-1"><strong>Travail :</strong> TP1 – Interface Web</p>
+      <p class="mb-1"><strong>Date de remise :</strong> 2026-03-02</p>
+      <p class="mb-0"><strong>Cégep :</strong> Cégep de La Pocatière</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
