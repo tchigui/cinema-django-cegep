@@ -1,0 +1,18 @@
+{% extends 'maitre.html' %}
+{% block titre %}Cinéma – Films{% endblock %}
+{% block titrepage %}Films à l'affiche{% endblock %}
+{% block films %}
+<div class="row g-4">
+  {% for film in films %}
+  <div class="col-12 col-md-4">
+    <div class="card h-100 p-3">
+      <h5 class="fw-bold" style="color: var(--mauve);">{{ film.titre }}</h5>
+      <p class="small text-muted mb-1">{{ film.duree_minutes }} min &nbsp;·&nbsp; {{ film.date_sortie }}</p>
+      <p class="mb-0">{{ film.description }}</p>
+    </div>
+  </div>
+  {% empty %}
+  <p>Aucun film disponible pour l'instant.</p>
+  {% endfor %}
+</div>
+{% endblock %}

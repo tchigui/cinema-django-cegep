@@ -1,44 +1,12 @@
 {% extends 'maitre.html' %}
-
-{% block titre %}Cinéma – Accueil{% endblock %}
-{% block titrepage %}Accueil{% endblock %}
-
+{% block titre %}Cinéma Le Scénario – Accueil{% endblock %}
+{% block titrepage %}Bienvenue au Cinéma Le Scénario{% endblock %}
 {% block accueil %}
 <div class="row g-4 align-items-start">
   <div class="col-12 col-md-6">
-    <h3 class="mb-3">Description du travail</h3>
-
-    <div class="card p-3">
-      <p>
-        Vous devez créer un site web de gestion d’une salle de cinéma à l’aide de l’outil de développement
-        présenté dans ce cours. Le site web à développer pour ce premier travail est la navigation entre les
-        pages du site et l’affichage selon certaines dispositions d’informations prescrites dans ce travail.
-      </p>
-
-      <p>
-        Votre site doit avoir une page maîtresse de présentation qui contiendra toutes les informations demandées.
-        Cette page doit également être liée à une page de styles qui sera disponible pour toutes les autres pages du site.
-        Cette page maître doit également contenir des zones d’affichages prédéterminées où l’information proviendra des autres pages du site,
-        plus de détails dans les spécifications du projet, elles sont identifiées par les zones « En-tête », « Menu », « contenu » et « Pied de page ».
-        (Voir Figure 1)
-      </p>
-
-      <p>
-        Cette page maître contiendra un en-tête, un pied de page et un menu. Ces trois sections regroupées ne devraient
-        pas prendre plus que 30% de la page. Les zones sont identifiées sur la figure 1. Le même en-tête, pied de page
-        et le menu doivent être identique sur toutes les pages.
-      </p>
-
-      <p>
-        Dans la section des films, vous trouverez des données à afficher selon certaines règles qui doivent être respectées.
-      </p>
-
-      <p class="mb-0">
-        Vous devez appliquer des styles sur l’ensemble des pages du site, de plus, vous devez installer ou utiliser « Bootstrap ».
-      </p>
-    </div>
+    <p>Le Cinéma Le Scénario de La Pocatière vous propose chaque semaine une sélection de films pour toute la famille. Venez nous rendre visite !</p>
+    <a href="/films/" class="btn btn-sm" style="background:var(--mauve);color:white;">Voir les films à l'affiche</a>
   </div>
-
   <div class="col-12 col-md-6">
     <img class="img-fluid rounded-4 shadow-sm" src="/static/images/cinema.avif" alt="Cinéma">
   </div>
